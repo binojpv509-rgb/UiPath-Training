@@ -1,0 +1,6 @@
+{
+  "Name": "HR_GENERATE_OFFER_LETTER_FILES_Performer_RE",
+  "ProjectType": "Process",
+  "Description": "Developed a UiPath RE Framework Performer bot to process candidate data from Orchestrator Queue. Retrieved transaction items and generated offer letters by populating a predefined Word template with candidate details. Converted documents to PDF and sent them via email to respective candidates. Implemented robust exception handling, retry mechanisms, and logging to ensure reliable and scalable automation.",
+  "MainFile": "Main.xaml"
+}
