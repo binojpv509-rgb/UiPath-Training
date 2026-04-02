@@ -128,7 +128,7 @@
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge(3)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,1225" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f3647d8a-c706-4a3b-a6ec-3419c2bf46e1" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge(3)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,1225" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f3647d8a-c706-4a3b-a6ec-3419c2bf46e1" Timeout="5" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -171,7 +171,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NCheckElement DelayBefore="0" DisplayName="check if window exists" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NCheckElement_1" ScopeIdentifier="f3647d8a-c706-4a3b-a6ec-3419c2bf46e1" Version="V5">
+                        <uix:NCheckElement DelayBefore="0" DisplayName="check if window exists" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NCheckElement_1" ScopeIdentifier="f3647d8a-c706-4a3b-a6ec-3419c2bf46e1" Timeout="5" Version="V5">
                           <uix:NCheckElement.Result>
                             <OutArgument x:TypeArguments="x:Boolean">
                               <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">bool_ElementExists</CSharpReference>

@@ -1,0 +1,6 @@
+{
+  "Name": "HR_GENERATE_OFFER_LETTER_FILES_DISPACHER",
+  "ProjectType": "Process",
+  "Description": "Designed a UiPath Dispatcher bot to read hiring report data from Excel and filter candidates with status marked as “Hired”. Extracted required details such as name, email, designation, and department, and pushed each record as a transaction item into Orchestrator Queue. Implemented as a sequence-based workflow with proper validation, logging, and error handling to ensure accurate and efficient queue population.",
+  "MainFile": "Main.xaml"
+}
