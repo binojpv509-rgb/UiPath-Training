@@ -1,0 +1,6 @@
+{
+  "Name": "Employee ID Card Generation Automation-RE",
+  "ProjectType": "Process",
+  "Description": "Designed and developed an automation using UiPath RE Framework to generate employee ID cards in bulk.\n\nThe process reads employee details (Name, Department, EmpCode, DOJ, Blood Group, Email) from Excel and matches corresponding images (JPG). It updates a predefined Word template with dynamic data and embeds the image.\n\nThe bot converts the ID card to PDF and emails it to the respective employee, with proper exception handling and logging using RE Framework.",
+  "MainFile": "Main.xaml"
+}
