@@ -1,0 +1,50 @@
+{
+	"type": "object",
+	"properties": {
+		"invoice_id": {
+			"type": "string"
+		},
+		"process_start_time": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"process_end_time": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"processing_time_seconds": {
+			"type": "number"
+		},
+		"bot_name": {
+			"type": "string"
+		},
+		"machine_name": {
+			"type": "string"
+		},
+		"queue_name": {
+			"type": "string"
+		},
+		"retry_count": {
+			"type": "integer"
+		},
+		"exception_type": {
+			"type": "string",
+			"description": "Business or System Exception"
+		},
+		"exception_message": {
+			"type": "string"
+		},
+		"status": {
+			"type": "string",
+			"enum": [
+				"Success",
+				"Failed",
+				"Retried"
+			]
+		}
+	},
+	"required": [
+		"invoice_id",
+		"status"
+	]
+}

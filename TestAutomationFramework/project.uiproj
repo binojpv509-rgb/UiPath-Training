@@ -1,0 +1,6 @@
+{
+  "Name": "TestAutomationFramework",
+  "ProjectType": "Tests",
+  "Description": "New Test Automation Framework",
+  "MainFile": "Main.xaml"
+}

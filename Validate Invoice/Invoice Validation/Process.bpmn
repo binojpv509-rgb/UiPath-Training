@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="x-uipath-initial-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="5194d994">
+  <bpmn:process id="Process_1" name="Process" isExecutable="false">
+    <bpmn:extensionElements>
+      <uipath:variables version="v1">
+        <uipath:inputOutput id="error2" name="Error" type="jsonSchema" elementId="Activity_SRIaBl"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="status" name="Status" type="string" elementId="Activity_SRIaBl" />
+        <uipath:inputOutput id="reason" name="Reason" type="string" elementId="Activity_SRIaBl" />
+        <uipath:inputOutput id="action" name="Action" type="string" elementId="Activity_LSFkTX" />
+        <uipath:inputOutput id="error3" name="Error" type="jsonSchema" elementId="Activity_LSFkTX"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="comment" name="Comment" type="string" elementId="Activity_LSFkTX" />
+        <uipath:inputOutput id="id" name="ID" type="string" elementId="Event_start" />
+        <uipath:inputOutput id="response" name="response" type="jsonSchema" elementId="Event_start"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"ParentID":{"title":"In location","type":"string"},"Owner":{"title":"Owner","$ref":"#/definitions/Owner"},"ParentDriveID":{"title":"Drive","type":"string"},"Shared":{"title":"Shared","type":"boolean"},"URL":{"title":"Url","type":"string"},"Extension":{"title":"File extension","type":"string"},"Type":{"title":"Type","type":"string"},"isFolder":{"title":"Is folder","type":"boolean"},"MIMEType":{"title":"Mime type","type":"string"},"FullName":{"title":"Name","type":"string"},"ID":{"title":"Id","type":"string"}},"definitions":{"Owner":{"type":"object","properties":{"Name":{"title":"Owner name","type":"string"},"ID":{"title":"Owner ID","type":"string"},"Email":{"title":"Created by(email)","type":"string"}}}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="error" name="Error" type="jsonSchema" elementId="Activity_aDtXfk"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="outInvoiceAmount" name="outInvoiceAmount" type="number" elementId="Activity_aDtXfk" />
+        <uipath:inputOutput id="outInvoiceDate" name="outInvoiceDate" type="string" elementId="Activity_aDtXfk" />
+        <uipath:inputOutput id="outInvoiceNumber" name="outInvoiceNumber" type="string" elementId="Activity_aDtXfk" />
+        <uipath:inputOutput id="outInvoiceVendorName" name="outInvoiceVendorName" type="string" elementId="Activity_aDtXfk" />
+        <uipath:inputOutput id="remoteFile" name="remoteFile" type="file" elementId="Activity_aDtXfk"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"ID":{"type":"string","description":"Orchestrator attachment key"},"FullName":{"type":"string","description":"File name"},"MimeType":{"type":"string","description":"The MIME type of the content, such as application/json or image/png"},"Metadata":{"type":"object","description":"Dictionary<string, string> of metadata","additionalProperties":{"type":"string"}}},"required":["ID"],"x-uipath-resource-kind":"JobAttachment"}]]></uipath:inputOutput>
+        <uipath:inputOutput id="error4" name="Error" type="jsonSchema" elementId="Activity_aQOl2h"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+      </uipath:variables>
+      <uipath:bindings version="v1">
+        <uipath:binding id="bTRrG1L8c" name="uipath-google-drive connection" type="string" default="1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6" resource="Connection" resourceKey="1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bLRJ3BfLg" name="FolderKey" type="string" default="b96e8a1d-48e5-47ae-a166-892c7fc97f7a" resource="Connection" resourceKey="1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6" propertyAttribute="folderKey" />
+        <uipath:binding id="bjR8C1tGA" name="folderPath" type="string" resource="process" resourceKey="Extract Data" propertyAttribute="folderPath" />
+        <uipath:binding id="bZh5ZF4jp" name="name" type="string" default="Extract Data" resource="process" resourceKey="Extract Data" propertyAttribute="name" />
+        <uipath:binding id="bSiCGrVwZ" name="folderPath" type="string" resource="process" resourceSubType="Agent" resourceKey="Agent" propertyAttribute="folderPath" />
+        <uipath:binding id="bTIyzqRKx" name="name" type="string" default="Agent" resource="process" resourceSubType="Agent" resourceKey="Agent" propertyAttribute="name" />
+        <uipath:binding id="bb577quy7" name="folderPath" type="string" resource="process" resourceSubType="Agent" resourceKey="Agent" propertyAttribute="folderPath" />
+        <uipath:binding id="bsOcq5F0X" name="folderPath" type="string" resource="app" resourceKey="SimpleApprovalApp" propertyAttribute="folderPath" />
+        <uipath:binding id="bF7Jvu1IX" name="name" type="string" default="SimpleApprovalApp" resource="app" resourceKey="SimpleApprovalApp" propertyAttribute="name" />
+        <uipath:binding id="b95gvwHVe" name="folderPath" type="string" resource="process" resourceKey="Move to Success" propertyAttribute="folderPath" />
+        <uipath:binding id="bjgEPnqlJ" name="name" type="string" default="Move to Success" resource="process" resourceKey="Move to Success" propertyAttribute="name" />
+      </uipath:bindings>
+      <uipath:migrationVersion version="11.5" />
+    </bpmn:extensionElements>
+    <bpmn:startEvent id="Event_start" name="Notify pdf created in GDrive">
+      <bpmn:extensionElements>
+        <uipath:entryPointId value="9f6c78b9-05cd-4404-8036-48d847a0500f" />
+        <uipath:event version="v1">
+          <uipath:type value="Intsvc.EventTrigger" version="v1" />
+          <uipath:context>
+            <uipath:input name="connectorKey" type="string" value="uipath-google-drive" />
+            <uipath:input name="connection" type="string" value="=bindings.bTRrG1L8c" />
+            <uipath:input name="folderKey" type="string" value="=bindings.bLRJ3BfLg" />
+            <uipath:input name="resourceKey" type="string" value="1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6" />
+            <uipath:input name="operation" type="string" value="FILE_CREATED" />
+            <uipath:input name="objectName" type="string" value="File" />
+            <uipath:input name="metadata" type="json"><![CDATA[{"designTimeMetadata":{"connectorLogoUrl":"https://cloud.uipath.com/elements_/scaleunit_/58cb4f17-4581-4130-a2ae-52448b37dc03/v3/element/elements/uipath-google-drive/image","activityDisplayName":"File Created","activityDescription":"Triggers when a new file is created in the drive.","activityHelpUrlTemplate":"https://docs.uipath.com/{0}/activities/other/latest/integration-service/uipath-google-drive-File-Created","activityConfig":{"isCurated":true,"operation":"FILE_CREATED"},"triggerActivity":{"eventFields":{"ParentID":"1JvKYpfNpn_gsQru7HzeJ5ZXE6w-_vUft"},"filterBuilder":{"expression":"(Extension == 'pdf')"}},"designTimeLookups":{"ParentDriveID":[{"id":"0ALnsjj5G8YA3Uk9PVA","title":"My Drive"}],"ParentID":[{"id":"1JvKYpfNpn_gsQru7HzeJ5ZXE6w-_vUft","title":"Invoices"}]}},"metadataState":{"jsonSchema":{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"ParentID":{"title":"In location","type":"string"},"Owner":{"title":"Owner","$ref":"#/definitions/Owner"},"ParentDriveID":{"title":"Drive","type":"string"},"Shared":{"title":"Shared","type":"boolean"},"URL":{"title":"Url","type":"string"},"Extension":{"title":"File extension","type":"string"},"Type":{"title":"Type","type":"string"},"isFolder":{"title":"Is folder","type":"boolean"},"MIMEType":{"title":"Mime type","type":"string"},"FullName":{"title":"Name","type":"string"},"ID":{"title":"Id","type":"string"}},"definitions":{"Owner":{"type":"object","properties":{"Name":{"title":"Owner name","type":"string"},"ID":{"title":"Owner ID","type":"string"},"Email":{"title":"Created by(email)","type":"string"}}}}}},"telemetryData":{"operation":"FILE_CREATED","objectName":"File","connectorKey":"uipath-google-drive","connectorName":"Google Drive","primaryKeyName":"ID"},"inputMetadata":{},"errorState":{"hasError":false},"bindings":[{"resource":"Property","key":"FILE_CREATED","value":{"ParentDriveID":{"defaultValue":"0ALnsjj5G8YA3Uk9PVA","isExpression":false}},"metadata":{"TriggerCreateParameters":"ParentDriveID","DebugQueryParameters":"ParentDriveID","BindingsVersion":"2.2","ObjectName":"File"}}]}]]></uipath:input>
+          </uipath:context>
+          <uipath:input name="body" type="json" target="body"><![CDATA[{"filters":{"expression":"(ParentID == '1JvKYpfNpn_gsQru7HzeJ5ZXE6w-_vUft') && ((Extension == 'pdf'))","variables":{}},"parameters":{"ParentDriveID":"0ALnsjj5G8YA3Uk9PVA"}}]]></uipath:input>
+          <uipath:output name="ID" type="string" source="=response.ID" var="id" />
+          <uipath:output name="response" type="jsonSchema" source="=response" var="response" />
+        </uipath:event>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>edge_Event_start-Activity_aDtXfk</bpmn:outgoing>
+      <bpmn:messageEventDefinition />
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_aDtXfk" name="Download and extract invoice data">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.bZh5ZF4jp" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bjR8C1tGA" />
+            <uipath:input name="_label" type="string" value="RPA Workflow" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"fileURL":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"fileURL":"=vars.response.URL"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error" />
+          <uipath:output name="outInvoiceDate" type="string" source="=outInvoiceDate" var="outInvoiceDate" />
+          <uipath:output name="outInvoiceVendorName" type="string" source="=outInvoiceVendorName" var="outInvoiceVendorName" />
+          <uipath:output name="outInvoiceAmount" type="number" source="=outInvoiceAmount" var="outInvoiceAmount" />
+          <uipath:output name="outInvoiceNumber" type="string" source="=outInvoiceNumber" var="outInvoiceNumber" />
+          <uipath:output name="remoteFile" type="file" source="=remoteFile" var="remoteFile" target="=orchestrator.JobAttachments" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Event_start-Activity_aDtXfk</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_aDtXfk-Activity_SRIaBl</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_SRIaBl" name="Validate data data extraction">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.bTIyzqRKx" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bb577quy7" />
+            <uipath:input name="_label" type="string" value="Agent" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"invoice_amount":{"type":"string"},"invoice_date":{"type":"string"},"invoice_number":{"type":"string"},"vendor_name":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"invoice_amount":"=vars.outInvoiceAmount","invoice_date":"=vars.outInvoiceDate","invoice_number":"=vars.outInvoiceNumber","vendor_name":"=vars.outInvoiceVendorName"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error2" />
+          <uipath:output name="Status" type="string" source="=Status" var="status" />
+          <uipath:output name="Reason" type="string" source="=Reason" var="reason" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Activity_aDtXfk-Activity_SRIaBl</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_SRIaBl-Gateway_EoG3gP</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gateway_EoG3gP" name="check if validation required">
+      <bpmn:incoming>edge_Activity_SRIaBl-Gateway_EoG3gP</bpmn:incoming>
+      <bpmn:outgoing>edge_Gateway_EoG3gP-Activity_LSFkTX</bpmn:outgoing>
+      <bpmn:outgoing>edge_Gateway_EoG3gP-Activity_aQOl2h</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Activity_LSFkTX" name="human validation">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Actions.HITL" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.bF7Jvu1IX" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bsOcq5F0X" />
+            <uipath:input name="_label" type="string" value="SimpleApprovalApp" />
+            <uipath:input name="taskTitle" type="string" value="=&#34;Validate - &#34; + vars.response.FullName" />
+            <uipath:input name="assignmentCriteria" type="string" value="user" />
+            <uipath:input name="recipient" type="json"><![CDATA[{"Type":2,"Value":"binojpv509@gmail.com"}]]></uipath:input>
+            <uipath:input name="priority" type="string" value="Medium" />
+            <uipath:input name="labels" type="string" />
+            <uipath:input name="actionCatalogName" type="string" />
+            <uipath:input name="enableActionableNotifications" type="boolean" value="false" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"Content":{"type":"string"},"Comment":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="HitlTaskArguments" type="json" target="bodyField"><![CDATA[{"Content":"=vars.reason","Comment":null}]]></uipath:input>
+          <uipath:output name="Action" type="string" source="=Action" var="action" />
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error3" />
+          <uipath:output name="Comment" type="string" source="=Comment" var="comment" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Gateway_EoG3gP-Activity_LSFkTX</bpmn:incoming>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_aQOl2h" name="move invoice to success">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.bjgEPnqlJ" />
+            <uipath:input name="folderPath" type="string" value="=bindings.b95gvwHVe" />
+            <uipath:input name="_label" type="string" value="RPA Workflow" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"DriveFileID":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"DriveFileID":"=vars.id"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error4" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Gateway_EoG3gP-Activity_aQOl2h</bpmn:incoming>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="edge_Event_start-Activity_aDtXfk" sourceRef="Event_start" targetRef="Activity_aDtXfk" />
+    <bpmn:sequenceFlow id="edge_Activity_aDtXfk-Activity_SRIaBl" sourceRef="Activity_aDtXfk" targetRef="Activity_SRIaBl" />
+    <bpmn:sequenceFlow id="edge_Activity_SRIaBl-Gateway_EoG3gP" sourceRef="Activity_SRIaBl" targetRef="Gateway_EoG3gP" />
+    <bpmn:sequenceFlow id="edge_Gateway_EoG3gP-Activity_LSFkTX" name="Human Validation" sourceRef="Gateway_EoG3gP" targetRef="Activity_LSFkTX">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=vars.status.ToLower() == "review"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="edge_Gateway_EoG3gP-Activity_aQOl2h" name="Success" sourceRef="Gateway_EoG3gP" targetRef="Activity_aQOl2h">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=vars.status.ToLower() == "success"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="S_Event_start" bpmnElement="Event_start">
+        <dc:Bounds x="260" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="260" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_aDtXfk" bpmnElement="Activity_aDtXfk">
+        <dc:Bounds x="344" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="344" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_SRIaBl" bpmnElement="Activity_SRIaBl">
+        <dc:Bounds x="492" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="492" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Gateway_EoG3gP" bpmnElement="Gateway_EoG3gP">
+        <dc:Bounds x="640" y="193" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="640" y="248" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_LSFkTX" bpmnElement="Activity_LSFkTX">
+        <dc:Bounds x="738" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="738" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_aQOl2h" bpmnElement="Activity_aQOl2h">
+        <dc:Bounds x="738" y="274" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="738" y="359" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Event_start-Activity_aDtXfk" bpmnElement="edge_Event_start-Activity_aDtXfk">
+        <di:waypoint x="296" y="218" />
+        <di:waypoint x="344" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_aDtXfk-Activity_SRIaBl" bpmnElement="edge_Activity_aDtXfk-Activity_SRIaBl">
+        <di:waypoint x="444" y="218" />
+        <di:waypoint x="492" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_SRIaBl-Gateway_EoG3gP" bpmnElement="edge_Activity_SRIaBl-Gateway_EoG3gP">
+        <di:waypoint x="592" y="218" />
+        <di:waypoint x="640" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Gateway_EoG3gP-Activity_LSFkTX" bpmnElement="edge_Gateway_EoG3gP-Activity_LSFkTX">
+        <di:waypoint x="690" y="218" />
+        <di:waypoint x="738" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Gateway_EoG3gP-Activity_aQOl2h" bpmnElement="edge_Gateway_EoG3gP-Activity_aQOl2h">
+        <di:waypoint x="665" y="243" />
+        <di:waypoint x="665" y="314" />
+        <di:waypoint x="738" y="314" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

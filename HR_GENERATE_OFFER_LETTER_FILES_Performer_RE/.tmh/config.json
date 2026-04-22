@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/binojouqcmuh/BinojDefault/testmanager_",
+  "defaultProject": {
+    "id": "e5879a6a-ba7a-0000-aa54-0b498a5b97ee",
+    "name": "test project automation",
+    "key": "TPA"
+  }
 }

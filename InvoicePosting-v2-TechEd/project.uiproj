@@ -1,0 +1,6 @@
+{
+  "Name": "InvoicePosting",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "ProcurementMain.xaml"
+}

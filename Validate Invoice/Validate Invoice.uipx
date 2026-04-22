@@ -1,0 +1,32 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "03d67043-aba0-465d-1993-08de91ad8ed2",
+  "Projects": [
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Invoice Validation/project.uiproj",
+      "Id": "0425b3a4-29ff-42b7-bf20-034779808632"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Move to Success/project.uiproj",
+      "Id": "4519acf0-e207-493c-a87e-88cd80884d89"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Extract Data/project.uiproj",
+      "Id": "4facb90b-9bd6-4e37-8ecc-30636995fcd7"
+    },
+    {
+      "Type": "WebApp",
+      "ProjectRelativePath": "SimpleApprovalApp/project.uiproj",
+      "Id": "776ca50e-f795-4b5d-8841-31972db5ce50"
+    },
+    {
+      "Type": "Agent",
+      "ProjectRelativePath": "Agent/project.uiproj",
+      "Id": "c67ffaae-1ce2-4dee-8f61-5c00afe084c2"
+    }
+  ]
+}

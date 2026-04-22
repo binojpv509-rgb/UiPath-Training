@@ -1,0 +1,156 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "EventTrigger",
+      "key": "1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6",
+      "id": "EventTrigger1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6",
+          "isExpression": false
+        },
+        "EntryPointUniqueId": {
+          "defaultValue": "9f6c78b9-05cd-4404-8036-48d847a0500f",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "Connector": "uipath-google-drive",
+        "ActivityName": "Notify pdf created in GDrive",
+        "BindingsVersion": "2.2",
+        "ObjectName": "File",
+        "Operation": "FILE_CREATED",
+        "FilterExpression": "(ParentID == '1JvKYpfNpn_gsQru7HzeJ5ZXE6w-_vUft') && ((Extension == 'pdf'))"
+      }
+    },
+    {
+      "resource": "Property",
+      "key": "FILE_CREATED",
+      "value": {
+        "ParentDriveID": {
+          "defaultValue": "0ALnsjj5G8YA3Uk9PVA",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "TriggerCreateParameters": "ParentDriveID",
+        "DebugQueryParameters": "ParentDriveID",
+        "BindingsVersion": "2.2",
+        "ObjectName": "File",
+        "ActivityName": "Notify pdf created in GDrive",
+        "ParentResourceKey": "EventTrigger.1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6"
+      },
+      "id": "Property_Event_start"
+    },
+    {
+      "resource": "Connection",
+      "key": "1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6",
+      "id": "Connection1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "1ad36ba9-306a-4e15-8e0c-5e0ae0855bd6",
+          "isExpression": false,
+          "displayName": "uipath-google-drive connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Notify pdf created in GDrive",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-google-drive connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-google-drive"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "Extract Data",
+      "id": "processExtract Data",
+      "value": {
+        "folderPath": {
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "Extract Data",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Download and extract invoice data",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "Agent",
+      "id": "processAgent",
+      "value": {
+        "folderPath": {
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "Agent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Validate data data extraction",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Agent"
+      }
+    },
+    {
+      "resource": "app",
+      "key": "SimpleApprovalApp",
+      "id": "appSimpleApprovalApp",
+      "value": {
+        "folderPath": {
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "SimpleApprovalApp",
+          "isExpression": false,
+          "displayName": "App name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "human validation",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "Move to Success",
+      "id": "processMove to Success",
+      "value": {
+        "folderPath": {
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "Move to Success",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "move invoice to success",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true"
+      }
+    }
+  ]
+}

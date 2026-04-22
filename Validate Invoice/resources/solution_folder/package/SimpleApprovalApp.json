@@ -1,0 +1,26 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "SimpleApprovalApp",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "776ca50e-f795-4b5d-8841-31972db5ce50",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "fileName": null,
+      "fileReference": null,
+      "name": "SimpleApprovalApp",
+      "description": null
+    },
+    "locks": [],
+    "key": "0f7d9c48-8dde-4c80-b8cb-d96f81ea2d71"
+  }
+}

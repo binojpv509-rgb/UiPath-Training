@@ -1,0 +1,49 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "$id": "entry-points.json",
+  "entryPoints": [
+    {
+      "filePath": "/content/agent.json",
+      "type": "agent",
+      "uniqueId": "2db1f25d-c46c-4031-8027-924eb5765427",
+      "input": {
+        "type": "object",
+        "properties": {
+          "invoice_amount": {
+            "type": "string",
+            "description": "invoice_amount"
+          },
+          "invoice_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "invoice_number": {
+            "type": "string"
+          },
+          "vendor_name": {
+            "type": "string"
+          }
+        },
+        "title": "Inputs",
+        "required": [
+          "invoice_amount",
+          "invoice_date",
+          "vendor_name"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "Status": {
+            "type": "string",
+            "description": "Output content"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "title": "Outputs"
+      }
+    }
+  ]
+}

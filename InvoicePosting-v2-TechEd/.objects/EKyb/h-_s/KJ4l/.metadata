@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge ForwardDemo1-InvoiceUpload",
+  "Type": "Screen",
+  "Id": "KJ4laHK6zUGyQsWBbwU1Xg",
+  "Reference": "WlbG1rL5a0qbA3hMX-YETQ/KJ4laHK6zUGyQsWBbwU1Xg",
+  "ParentRef": "WlbG1rL5a0qbA3hMX-YETQ/h-_ssA_GxUWx0kXUTx2BlA",
+  "Created": "2024-10-16T09:33:16.5122521Z",
+  "Updated": "2024-10-16T09:33:16.5122521Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

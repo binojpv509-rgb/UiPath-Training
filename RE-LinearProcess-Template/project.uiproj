@@ -1,0 +1,6 @@
+{
+  "Name": "RE-LinearProcess-Template",
+  "ProjectType": "Process",
+  "Description": "RE-LinearProcess-Template",
+  "MainFile": "Main.xaml"
+}

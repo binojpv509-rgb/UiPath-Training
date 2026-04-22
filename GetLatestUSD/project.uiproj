@@ -1,0 +1,6 @@
+{
+  "Name": "GetLatestUSD",
+  "ProjectType": "Process",
+  "Description": "GetLatestUSD",
+  "MainFile": "Main.xaml"
+}

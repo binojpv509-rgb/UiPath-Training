@@ -1,0 +1,6 @@
+{
+  "Name": "Document-Extraction",
+  "ProjectType": "Process",
+  "Description": "Document-Extraction",
+  "MainFile": "Main.xaml"
+}

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "UiBank-Login",
+  "Type": "Screen",
+  "Id": "6xZsmJfZOE2fTrwxJkTlBA",
+  "Reference": "iZz_U-Rn4kiV8cb5jyaKyg/6xZsmJfZOE2fTrwxJkTlBA",
+  "ParentRef": "iZz_U-Rn4kiV8cb5jyaKyg/NmykcWxGck6qfIToMKZSoA",
+  "Created": "2026-04-20T14:49:58.8321992Z",
+  "Updated": "2026-04-20T15:16:13.9531313Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

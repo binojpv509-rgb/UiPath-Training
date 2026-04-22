@@ -1,0 +1,248 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.in_GetLatestUSD_URL="https://open.er-api.com/v6/latest/USD" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sn="clr-namespace:System.Net;assembly=System.Net.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uwah="clr-namespace:UiPath.Web.Activities.Http;assembly=UiPath.Web.Activities" xmlns:uwahm="clr-namespace:UiPath.Web.Activities.Http.Models;assembly=UiPath.Web.Activities" xmlns:uwavsdb="clr-namespace:UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON9520a2.Bundle;assembly=DeserializeJSON9520a.ln0YY1TdmrM14HCYLTANgl1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_GetLatestUSD_URL" Type="InArgument(x:String)" />
+    <x:Property Name="in_str_Currency" Type="InArgument(x:String)" />
+    <x:Property Name="out_str_Rate" Type="OutArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Web.Activities.Http.Models</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Web.Activities.Http</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON731fc8.Bundle</x:String>
+      <x:String>UiPath.Web.Activities.ViewModels</x:String>
+      <x:String>UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON9520a2.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>DeserializeJSON731fc.fC8W92P04RQ14JyD6W0PRF4</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>DeserializeJSON9520a.ln0YY1TdmrM14HCYLTANgl1</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="975,1363" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="uwahm:HttpResponseSummary" Name="httpResponse_Response" />
+      <Variable x:TypeArguments="uwavsdb:DeserializeJSON9520a2" Name="ResponseJson" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="GetLatest-USD" sap:VirtualizedContainerService.HintSize="486,1340" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If DisplayName="Check if currency is empty" sap:VirtualizedContainerService.HintSize="452,403" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Condition>
+          <InArgument x:TypeArguments="x:Boolean">
+            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">string.IsNullOrEmpty(in_str_Currency)</CSharpValue>
+          </InArgument>
+        </If.Condition>
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Throw sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_1">
+              <InArgument x:TypeArguments="s:Exception">
+                <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">new System.Exception("Currency cannot be empty.")</CSharpValue>
+              </InArgument>
+            </Throw>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Else>
+      </If>
+      <uwah:NetHttpRequest BasicAuthPassword="{x:Null}" BasicAuthSecurePassword="{x:Null}" BasicAuthUsername="{x:Null}" BinaryPayload="{x:Null}" ClientCertPassword="{x:Null}" ClientCertPath="{x:Null}" ClientCertSecurePassword="{x:Null}" Cookies="{x:Null}" CustomNegotiatedAuthCredentials="{x:Null}" FilePath="{x:Null}" FormData="{x:Null}" Headers="{x:Null}" LocalFiles="{x:Null}" OAuthToken="{x:Null}" OutputFileName="{x:Null}" OutputFileTargetFolder="{x:Null}" Parameters="{x:Null}" PathResource="{x:Null}" ProxyConfiguration="{x:Null}" ResourceFiles="{x:Null}" TextPayload="{x:Null}" AuthenticationType="None" ContinueOnError="True" DisableSslVerification="False" DisplayName="HTTP Request - get latest usd" EnableCookies="True" FileOverwrite="AutoRename" FollowRedirects="True" sap:VirtualizedContainerService.HintSize="452,277" sap2010:WorkflowViewState.IdRef="NetHttpRequest_1" InitialDelay="500" MaxRedirects="3" MaxRetryAfterDelay="30000" Method="GET" Multiplier="2" PreferRetryAfterValue="True" RequestBodyType="None" RetryCount="3" RetryPolicyType="Basic" SaveRawRequestResponse="False" SaveResponseAsFile="False" TextPayloadContentType="application/json" TextPayloadEncoding="UTF-8" TlsProtocol="Automatic" UseJitter="True" UseOsNegotiatedAuthCredentials="True">
+        <uwah:NetHttpRequest.FormDataParts>
+          <InArgument x:TypeArguments="scg:IEnumerable(uwahm:FormDataPart)">
+            <CSharpValue x:TypeArguments="scg:IEnumerable(uwahm:FormDataPart)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3" xml:space="preserve">new List&lt;FormDataPart&gt; 
+{
+	new FileFormDataPart(),
+	new BinaryFormDataPart(),
+	new TextFormDataPart()
+}</CSharpValue>
+          </InArgument>
+        </uwah:NetHttpRequest.FormDataParts>
+        <uwah:NetHttpRequest.RequestUrl>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">in_GetLatestUSD_URL</CSharpValue>
+          </InArgument>
+        </uwah:NetHttpRequest.RequestUrl>
+        <uwah:NetHttpRequest.Result>
+          <OutArgument x:TypeArguments="uwahm:HttpResponseSummary">
+            <CSharpReference x:TypeArguments="uwahm:HttpResponseSummary" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">httpResponse_Response</CSharpReference>
+          </OutArgument>
+        </uwah:NetHttpRequest.Result>
+        <uwah:NetHttpRequest.RetryStatusCodes>
+          <InArgument x:TypeArguments="scg:IEnumerable(sn:HttpStatusCode)">
+            <CSharpValue x:TypeArguments="scg:IEnumerable(sn:HttpStatusCode)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2" xml:space="preserve">new List&lt;System.Net.HttpStatusCode&gt; 
+{
+	System.Net.HttpStatusCode.RequestTimeout,
+	System.Net.HttpStatusCode.TooManyRequests,
+	System.Net.HttpStatusCode.InternalServerError,
+	System.Net.HttpStatusCode.BadGateway,
+	System.Net.HttpStatusCode.ServiceUnavailable,
+	System.Net.HttpStatusCode.GatewayTimeout
+}</CSharpValue>
+          </InArgument>
+        </uwah:NetHttpRequest.RetryStatusCodes>
+        <uwah:NetHttpRequest.TimeoutInMiliseconds>
+          <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+            <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="10000" />
+          </InArgument>
+        </uwah:NetHttpRequest.TimeoutInMiliseconds>
+      </uwah:NetHttpRequest>
+      <ui:DeserializeJson x:TypeArguments="uwavsdb:DeserializeJSON9520a2" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="452,236" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonSample="{}{&#xA; &quot;result&quot;: &quot;success&quot;,&#xA; &quot;provider&quot;: &quot;https://www.exchangerate-api.com&quot;,&#xA; &quot;documentation&quot;: &quot;https://www.exchangerate-api.com/docs/free&quot;,&#xA; &quot;terms_of_use&quot;: &quot;https://www.exchangerate-api.com/terms&quot;,&#xA; &quot;time_last_update_unix&quot;: 1775692951,&#xA; &quot;time_last_update_utc&quot;: &quot;Thu, 09 Apr 2026 00:02:31 +0000&quot;,&#xA; &quot;time_next_update_unix&quot;: 1775780301,&#xA; &quot;time_next_update_utc&quot;: &quot;Fri, 10 Apr 2026 00:18:21 +0000&quot;,&#xA; &quot;time_eol_unix&quot;: 0,&#xA; &quot;base_code&quot;: &quot;USD&quot;,&#xA; &quot;rates&quot;: {&#xA;  &quot;USD&quot;: 1,&#xA;  &quot;AED&quot;: 3.6725,&#xA;  &quot;AFN&quot;: 64.961639,&#xA;  &quot;ALL&quot;: 82.250514,&#xA;  &quot;AMD&quot;: 376.983322,&#xA;  &quot;ANG&quot;: 1.79,&#xA;  &quot;AOA&quot;: 922.668627,&#xA;  &quot;ARS&quot;: 1387.0308,&#xA;  &quot;AUD&quot;: 1.419397,&#xA;  &quot;AWG&quot;: 1.79,&#xA;  &quot;AZN&quot;: 1.700651,&#xA;  &quot;BAM&quot;: 1.674966,&#xA;  &quot;BBD&quot;: 2,&#xA;  &quot;BDT&quot;: 122.912949,&#xA;  &quot;BGN&quot;: 1.674966,&#xA;  &quot;BHD&quot;: 0.376,&#xA;  &quot;BIF&quot;: 2981.597431,&#xA;  &quot;BMD&quot;: 1,&#xA;  &quot;BND&quot;: 1.274117,&#xA;  &quot;BOB&quot;: 6.925637,&#xA;  &quot;BRL&quot;: 5.10261,&#xA;  &quot;BSD&quot;: 1,&#xA;  &quot;BTN&quot;: 92.572507,&#xA;  &quot;BWP&quot;: 13.667085,&#xA;  &quot;BYN&quot;: 2.916948,&#xA;  &quot;BZD&quot;: 2,&#xA;  &quot;CAD&quot;: 1.384735,&#xA;  &quot;CDF&quot;: 2311.018729,&#xA;  &quot;CHF&quot;: 0.790472,&#xA;  &quot;CLF&quot;: 0.023174,&#xA;  &quot;CLP&quot;: 915.974133,&#xA;  &quot;CNH&quot;: 6.831161,&#xA;  &quot;CNY&quot;: 6.843586,&#xA;  &quot;COP&quot;: 3687.02686,&#xA;  &quot;CRC&quot;: 464.185777,&#xA;  &quot;CUP&quot;: 24,&#xA;  &quot;CVE&quot;: 94.430554,&#xA;  &quot;CZK&quot;: 20.894589,&#xA;  &quot;DJF&quot;: 177.721,&#xA;  &quot;DKK&quot;: 6.387843,&#xA;  &quot;DOP&quot;: 60.493417,&#xA;  &quot;DZD&quot;: 132.501263,&#xA;  &quot;EGP&quot;: 53.320258,&#xA;  &quot;ERN&quot;: 15,&#xA;  &quot;ETB&quot;: 156.32207,&#xA;  &quot;EUR&quot;: 0.856399,&#xA;  &quot;FJD&quot;: 2.216066,&#xA;  &quot;FKP&quot;: 0.745359,&#xA;  &quot;FOK&quot;: 6.387639,&#xA;  &quot;GBP&quot;: 0.745362,&#xA;  &quot;GEL&quot;: 2.694422,&#xA;  &quot;GGP&quot;: 0.745359,&#xA;  &quot;GHS&quot;: 11.078261,&#xA;  &quot;GIP&quot;: 0.745359,&#xA;  &quot;GMD&quot;: 74.329414,&#xA;  &quot;GNF&quot;: 8787.424717,&#xA;  &quot;GTQ&quot;: 7.651797,&#xA;  &quot;GYD&quot;: 209.703635,&#xA;  &quot;HKD&quot;: 7.832261,&#xA;  &quot;HNL&quot;: 26.561335,&#xA;  &quot;HRK&quot;: 6.452519,&#xA;  &quot;HTG&quot;: 131.256247,&#xA;  &quot;HUF&quot;: 322.544808,&#xA;  &quot;IDR&quot;: 17010.537114,&#xA;  &quot;ILS&quot;: 3.089122,&#xA;  &quot;IMP&quot;: 0.745359,&#xA;  &quot;INR&quot;: 92.57461,&#xA;  &quot;IQD&quot;: 1312.972909,&#xA;  &quot;IRR&quot;: 1078292.550565,&#xA;  &quot;ISK&quot;: 123.030123,&#xA;  &quot;JEP&quot;: 0.745359,&#xA;  &quot;JMD&quot;: 157.512991,&#xA;  &quot;JOD&quot;: 0.709,&#xA;  &quot;JPY&quot;: 158.529092,&#xA;  &quot;KES&quot;: 129.580733,&#xA;  &quot;KGS&quot;: 87.52844,&#xA;  &quot;KHR&quot;: 4027.257272,&#xA;  &quot;KID&quot;: 1.419394,&#xA;  &quot;KMF&quot;: 421.319433,&#xA;  &quot;KRW&quot;: 1478.049509,&#xA;  &quot;KWD&quot;: 0.308371,&#xA;  &quot;KYD&quot;: 0.833333,&#xA;  &quot;KZT&quot;: 477.727397,&#xA;  &quot;LAK&quot;: 21974.196783,&#xA;  &quot;LBP&quot;: 89500,&#xA;  &quot;LKR&quot;: 314.688281,&#xA;  &quot;LRD&quot;: 184.338794,&#xA;  &quot;LSL&quot;: 16.398998,&#xA;  &quot;LYD&quot;: 6.404915,&#xA;  &quot;MAD&quot;: 9.318928,&#xA;  &quot;MDL&quot;: 17.308872,&#xA;  &quot;MGA&quot;: 4163.899441,&#xA;  &quot;MKD&quot;: 53.472145,&#xA;  &quot;MMK&quot;: 2101.20988,&#xA;  &quot;MNT&quot;: 3599.997235,&#xA;  &quot;MOP&quot;: 8.067228,&#xA;  &quot;MRU&quot;: 40.141781,&#xA;  &quot;MUR&quot;: 46.591006,&#xA;  &quot;MVR&quot;: 15.453009,&#xA;  &quot;MWK&quot;: 1741.569841,&#xA;  &quot;MXN&quot;: 17.436135,&#xA;  &quot;MYR&quot;: 3.977639,&#xA;  &quot;MZN&quot;: 63.783953,&#xA;  &quot;NAD&quot;: 16.398998,&#xA;  &quot;NGN&quot;: 1371.726591,&#xA;  &quot;NIO&quot;: 36.782802,&#xA;  &quot;NOK&quot;: 9.564627,&#xA;  &quot;NPR&quot;: 148.116011,&#xA;  &quot;NZD&quot;: 1.716225,&#xA;  &quot;OMR&quot;: 0.384497,&#xA;  &quot;PAB&quot;: 1,&#xA;  &quot;PEN&quot;: 3.409211,&#xA;  &quot;PGK&quot;: 4.371573,&#xA;  &quot;PHP&quot;: 59.529683,&#xA;  &quot;PKR&quot;: 278.785727,&#xA;  &quot;PLN&quot;: 3.644191,&#xA;  &quot;PYG&quot;: 6487.028739,&#xA;  &quot;QAR&quot;: 3.64,&#xA;  &quot;RON&quot;: 4.359844,&#xA;  &quot;RSD&quot;: 100.422344,&#xA;  &quot;RUB&quot;: 78.532386,&#xA;  &quot;RWF&quot;: 1462.630605,&#xA;  &quot;SAR&quot;: 3.75,&#xA;  &quot;SBD&quot;: 8.020081,&#xA;  &quot;SCR&quot;: 14.449897,&#xA;  &quot;SDG&quot;: 545.095138,&#xA;  &quot;SEK&quot;: 9.303293,&#xA;  &quot;SGD&quot;: 1.274118,&#xA;  &quot;SHP&quot;: 0.745359,&#xA;  &quot;SLE&quot;: 24.714793,&#xA;  &quot;SLL&quot;: 24714.793507,&#xA;  &quot;SOS&quot;: 572.941821,&#xA;  &quot;SRD&quot;: 37.653008,&#xA;  &quot;SSP&quot;: 4587.011774,&#xA;  &quot;STN&quot;: 20.981713,&#xA;  &quot;SYP&quot;: 113.585167,&#xA;  &quot;SZL&quot;: 16.398998,&#xA;  &quot;THB&quot;: 32.018185,&#xA;  &quot;TJS&quot;: 9.54356,&#xA;  &quot;TMT&quot;: 3.506178,&#xA;  &quot;TND&quot;: 2.906041,&#xA;  &quot;TOP&quot;: 2.388599,&#xA;  &quot;TRY&quot;: 44.500188,&#xA;  &quot;TTD&quot;: 6.763798,&#xA;  &quot;TVD&quot;: 1.419394,&#xA;  &quot;TWD&quot;: 31.755146,&#xA;  &quot;TZS&quot;: 2604.735453,&#xA;  &quot;UAH&quot;: 43.388391,&#xA;  &quot;UGX&quot;: 3717.240909,&#xA;  &quot;UYU&quot;: 40.517083,&#xA;  &quot;UZS&quot;: 12235.537094,&#xA;  &quot;VES&quot;: 475.9583,&#xA;  &quot;VND&quot;: 26263.261789,&#xA;  &quot;VUV&quot;: 120.148034,&#xA;  &quot;WST&quot;: 2.742642,&#xA;  &quot;XAF&quot;: 561.759245,&#xA;  &quot;XCD&quot;: 2.7,&#xA;  &quot;XCG&quot;: 1.79,&#xA;  &quot;XDR&quot;: 0.729732,&#xA;  &quot;XOF&quot;: 561.759245,&#xA;  &quot;XPF&quot;: 102.195501,&#xA;  &quot;YER&quot;: 238.697518,&#xA;  &quot;ZAR&quot;: 16.399066,&#xA;  &quot;ZMW&quot;: 19.307248,&#xA;  &quot;ZWG&quot;: 25.2374,&#xA;  &quot;ZWL&quot;: 25.2374&#xA; }&#xA;}">
+        <ui:DeserializeJson.JsonObject>
+          <OutArgument x:TypeArguments="uwavsdb:DeserializeJSON9520a2">
+            <CSharpReference x:TypeArguments="uwavsdb:DeserializeJSON9520a2" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">ResponseJson</CSharpReference>
+          </OutArgument>
+        </ui:DeserializeJson.JsonObject>
+        <ui:DeserializeJson.JsonString>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">httpResponse_Response.TextContent</CSharpValue>
+          </InArgument>
+        </ui:DeserializeJson.JsonString>
+      </ui:DeserializeJson>
+      <ui:LogMessage DisplayName="Log Message - response" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20" xml:space="preserve">"1 USD to  "+in_str_Currency+" is "+ResponseJson.rates.GetType().GetProperty(in_str_Currency).GetValue(ResponseJson.rates)</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
+      <Assign sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">out_str_Rate</CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">ResponseJson.rates.GetType().GetProperty(in_str_Currency.ToString()).GetValue(ResponseJson.rates).ToString()</CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+  </Sequence>
+</Activity>

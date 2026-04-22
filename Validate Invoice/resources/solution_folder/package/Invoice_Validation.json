@@ -1,0 +1,26 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Invoice Validation",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "0425b3a4-29ff-42b7-bf20-034779808632",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "fileName": null,
+      "fileReference": null,
+      "name": "Invoice Validation",
+      "description": null
+    },
+    "locks": [],
+    "key": "a0f311bd-0d69-4e36-8734-ab86db3e6dc9"
+  }
+}

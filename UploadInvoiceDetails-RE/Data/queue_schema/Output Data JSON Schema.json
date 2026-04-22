@@ -1,0 +1,53 @@
+{
+	"type": "object",
+	"properties": {
+		"invoice_id": {
+			"type": "string"
+		},
+		"invoice_number": {
+			"type": "string"
+		},
+		"invoice_date": {
+			"type": "string",
+			"format": "date"
+		},
+		"vendor_name": {
+			"type": "string"
+		},
+		"invoice_amount": {
+			"type": "number"
+		},
+		"currency": {
+			"type": "string"
+		},
+		"tax_amount": {
+			"type": "number"
+		},
+		"line_items_count": {
+			"type": "integer"
+		},
+		"extraction_status": {
+			"type": "string",
+			"enum": [
+				"Success",
+				"Partial",
+				"Failed"
+			]
+		},
+		"validation_status": {
+			"type": "string",
+			"enum": [
+				"Valid",
+				"Invalid",
+				"Review"
+			]
+		},
+		"comments": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"invoice_id",
+		"extraction_status"
+	]
+}

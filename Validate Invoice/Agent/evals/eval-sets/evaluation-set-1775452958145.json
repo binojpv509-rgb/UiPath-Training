@@ -1,0 +1,67 @@
+{
+  "id": "3fff143a-6c83-484f-a7a7-eec37109c262",
+  "fileName": "evaluation-set-1775452958145.json",
+  "evaluatorRefs": [
+    "d0ede5a9-e819-47df-bfd9-e43f9d6b9296",
+    "9ced510b-fe5c-4e19-8596-9ae3cf03afbb"
+  ],
+  "evaluations": [
+    {
+      "id": "60f42f4e-f1ae-4e24-9b97-0de5752b3421",
+      "name": "under limit",
+      "inputs": {
+        "invoice_amount": "480",
+        "invoice_date": "02-06-2026",
+        "invoice_number": "123",
+        "vendor_name": "TEST"
+      },
+      "expectedOutput": {
+        "Status": "success",
+        "Reason": "under limit"
+      },
+      "expectedAgentBehavior": "",
+      "simulationInstructions": "",
+      "simulateInput": false,
+      "inputGenerationInstructions": "",
+      "simulateTools": false,
+      "toolsToSimulate": [],
+      "evalSetId": "3fff143a-6c83-484f-a7a7-eec37109c262",
+      "createdAt": "2026-04-06T05:23:46.628Z",
+      "updatedAt": "2026-04-06T05:23:46.628Z",
+      "source": "manual"
+    },
+    {
+      "id": "8e17b7dc-6ee2-470b-ac39-665391278191",
+      "name": "over limit",
+      "inputs": {
+        "invoice_amount": "510",
+        "invoice_date": "04-06-2025",
+        "invoice_number": "124",
+        "vendor_name": "test"
+      },
+      "expectedOutput": {
+        "Status": "review",
+        "Reason": "over limit"
+      },
+      "expectedAgentBehavior": "",
+      "simulationInstructions": "",
+      "simulateInput": false,
+      "inputGenerationInstructions": "",
+      "simulateTools": false,
+      "toolsToSimulate": [],
+      "evalSetId": "3fff143a-6c83-484f-a7a7-eec37109c262",
+      "createdAt": "2026-04-06T05:24:26.860Z",
+      "updatedAt": "2026-04-06T05:24:26.860Z",
+      "source": "manual"
+    }
+  ],
+  "name": "Evaluation Set 2",
+  "batchSize": 10,
+  "timeoutMinutes": 20,
+  "modelSettings": [],
+  "agentMemorySettings": [],
+  "agentMemoryEnabled": false,
+  "lineByLineEvaluation": false,
+  "createdAt": "2026-04-06T05:22:38.145Z",
+  "updatedAt": "2026-04-06T05:24:26.860Z"
+}

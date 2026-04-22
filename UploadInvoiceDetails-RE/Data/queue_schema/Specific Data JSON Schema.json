@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "invoice_id": {
+      "type": "string",
+      "description": "Unique invoice identifier (timestamp-based or GUID)"
+    },
+    "invoice_name": {
+      "type": "string",
+      "description": "Name of the invoice file"
+    },
+    "invoice_path": {
+      "type": "string",
+      "description": "Full folder/file path of the invoice"
+    },
+    "source_system": {
+      "type": "string",
+      "description": "Optional: source of invoice (email, upload, etc.)"
+    }
+  },
+  "required": [
+    "invoice_id",
+    "invoice_name",
+    "invoice_path"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "version": "1.1.0",
+  "settings": {
+    "model": "gpt-4o-2024-11-20-community-agents",
+    "maxTokens": 16384,
+    "temperature": 0,
+    "engine": "basic-v2",
+    "maxIterations": 25,
+    "mode": "standard"
+  },
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "invoice_amount": {
+        "type": "string",
+        "description": "invoice_amount"
+      },
+      "invoice_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "invoice_number": {
+        "type": "string"
+      },
+      "vendor_name": {
+        "type": "string"
+      }
+    },
+    "title": "Inputs",
+    "required": [
+      "invoice_amount",
+      "invoice_date",
+      "vendor_name"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "Status": {
+        "type": "string",
+        "description": "Output content"
+      },
+      "Reason": {
+        "type": "string"
+      }
+    },
+    "title": "Outputs"
+  },
+  "metadata": {
+    "storageVersion": "50.0.0",
+    "isConversational": false,
+    "targetRuntime": "pythonAgent",
+    "showProjectCreationExperience": false
+  },
+  "type": "lowCode",
+  "projectId": "2cd86d6e-0a10-4ab3-9d2b-bb4713b527db",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an invoice validation agent. Your task is to validate extracted invoice data fields and return a structured JSON response.\n\n### Input Fields:\n\n* invoice_amount\n* invoice_date\n* invoice_number\n* vendor_name\n\n### Validation Rules:\n\n1. **Check for Missing or Empty Values:**\n\n   * If any of the fields (invoice_amount, invoice_date, invoice_number, vendor_name) are missing, null, or empty:\n\n     * Set `\"status\"` to `\"review\"`\n     * Set `\"reason\"` to a clear message indicating which field(s) are missing or empty\n\n2. **If All Fields Are Present and Non-Empty:**\n\n   * Check the value of `invoice_amount`:\n\n     * If invoice_amount < 500:\n\n       * `\"status\"` = `\"success\"`\n       * `\"reason\"` = `\"under limit\"`\n     * If invoice_amount >= 500:\n\n       * `\"status\"` = `\"review\"`\n       * `\"reason\"` = `\"over limit\"`\n\n### Output Format Rules:\n\n* Always return a valid JSON object\n* Only include the following keys:\n\n  * `\"status\"`\n  * `\"reason\"`\n* Do not include any explanations, comments, or additional text outside the JSON\n\n### Example Output:\n\n```json\n{\n  \"status\": \"success\",\n  \"reason\": \"under limit\"\n}\n```",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "You are an invoice validation agent. Your task is to validate extracted invoice data fields and return a structured JSON response.\n\n### Input Fields:\n\n* invoice_amount\n* invoice_date\n* invoice_number\n* vendor_name\n\n### Validation Rules:\n\n1. **Check for Missing or Empty Values:**\n\n   * If any of the fields (invoice_amount, invoice_date, invoice_number, vendor_name) are missing, null, or empty:\n\n     * Set `\"status\"` to `\"review\"`\n     * Set `\"reason\"` to a clear message indicating which field(s) are missing or empty\n\n2. **If All Fields Are Present and Non-Empty:**\n\n   * Check the value of `invoice_amount`:\n\n     * If invoice_amount < 500:\n\n       * `\"status\"` = `\"success\"`\n       * `\"reason\"` = `\"under limit\"`\n     * If invoice_amount >= 500:\n\n       * `\"status\"` = `\"review\"`\n       * `\"reason\"` = `\"over limit\"`\n\n### Output Format Rules:\n\n* Always return a valid JSON object\n* Only include the following keys:\n\n  * `\"status\"`\n  * `\"reason\"`\n* Do not include any explanations, comments, or additional text outside the JSON\n\n### Example Output:\n\n```json\n{\n  \"status\": \"success\",\n  \"reason\": \"under limit\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "Validate the following extracted invoice data based on the defined rules.\n\nInvoice Data:\ninvoice_amount: {{invoice_amount}}\ninvoice_date: {{invoice_date}}\ninvoice_number: {{invoice_number}}\nvendor_name: {{vendor_name}}\n\nReturn the result strictly in JSON format with keys status and reason only.",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "Validate the following extracted invoice data based on the defined rules.\n\nInvoice Data:\ninvoice_amount: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.invoice_amount"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\ninvoice_date: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.invoice_date"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\ninvoice_number: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.invoice_number"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\nvendor_name: "
+        },
+        {
+          "type": "variable",
+          "rawString": "input.vendor_name"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "\n\nReturn the result strictly in JSON format with keys status and reason only."
+        }
+      ]
+    }
+  ]
+}

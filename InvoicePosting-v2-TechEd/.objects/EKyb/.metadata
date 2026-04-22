@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge ForwardDemo1-InvoiceUpload",
+  "Type": "App",
+  "Id": "EKybRxY5rEmPDGbMDObGsQ",
+  "Reference": "WlbG1rL5a0qbA3hMX-YETQ/EKybRxY5rEmPDGbMDObGsQ",
+  "Created": "2024-10-16T09:33:16.272598Z",
+  "Updated": "2024-10-16T09:33:16.272598Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
