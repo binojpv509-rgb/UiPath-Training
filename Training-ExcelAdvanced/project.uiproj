@@ -1,0 +1,6 @@
+{
+  "Name": "Training-ExcelAdvanced",
+  "ProjectType": "Process",
+  "Description": "Training-ExcelAdvanced",
+  "MainFile": "Main.xaml"
+}
