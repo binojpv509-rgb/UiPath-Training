@@ -1,0 +1,6 @@
+{
+  "Name": "Training-UiAutomation",
+  "ProjectType": "Process",
+  "Description": "Training-UiAutomation",
+  "MainFile": "Main.xaml"
+}

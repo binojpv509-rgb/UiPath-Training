@@ -109,7 +109,7 @@
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID0}" sap2010:Annotation.AnnotationText="[Process title]&#xA;[Process description]&#xA;[Additional information (e.g., author, contact information and applications involved and required external setup)]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="1004,560" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID0}" sap2010:Annotation.AnnotationText="[Process title]&#xA;[Process description]&#xA;[Additional information (e.g., author, contact information and applications involved and required external setup)]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="1195,538" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -309,7 +309,7 @@
                           </InArgument>
                         </ui:ReadRange.WorkbookPath>
                       </ui:ReadRange>
-                      <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" FolderPath="Training" sap:VirtualizedContainerService.HintSize="416,219" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_1" QueueName="RPA-Challenge">
+                      <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" FolderPath="Training/UiAutomations/RPA Challenge - Form" sap:VirtualizedContainerService.HintSize="416,219" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_1" QueueName="RPA-Challenge">
                         <ui:BulkAddQueueItems.QueueItemsDataTable>
                           <InArgument x:TypeArguments="sd:DataTable">
                             <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">dt_TransactionData</CSharpValue>
@@ -1132,7 +1132,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.To>
-                    <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="380,256" sap2010:WorkflowViewState.IdRef="State_2" IsFinal="True">
+                    <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="200,119" sap2010:WorkflowViewState.IdRef="State_2" IsFinal="True">
                       <State.Entry>
                         <TryCatch DisplayName="Try to close all aplications" sap:VirtualizedContainerService.HintSize="452,881" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                           <sap:WorkflowViewStateService.ViewState>

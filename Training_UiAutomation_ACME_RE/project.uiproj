@@ -1,0 +1,6 @@
+{
+  "Name": "Training_UiAutomation_ACME_RE",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework",
+  "MainFile": "Main.xaml"
+}
