@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8bS6BeGMbUa2t7aJr2iv1w" Reference="T58RIZsXAUyuwn3Q9_EhGg/2Lc4ns22vkC5_mi4taf07g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="83cfb281-d63d-40fa-9b62-7b5964a41803" DesignTimeRectangle="35, 532, 120, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Exit' role='push button' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;ctrl name='Exit' matching:name='fuzzy' fuzzylevel:name='0.0' role='push button' check:text='Exit' /&gt;" Guid="2068e26c-9129-42a6-9b19-9a9cebe6ea2c" ScopeSelectorArgument="[&quot;&lt;wnd app='uidemo.exe' title='&quot;+in_Config(&quot;ApplicationWindowName&quot;).ToString+&quot;' /&gt;&quot;]" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="eae8d0ef7acd121feb2b069558c0952a.jpg" xmlns="">0tnGp1FgmF02CQu42rN_xNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge ACME System 1 - Download Monthly Report",
+  "Type": "Screen",
+  "Id": "rPdZIv5JJk2hjklzwRVx6w",
+  "Reference": "hNyVTdIh5EWtrCZzHcQmeQ/rPdZIv5JJk2hjklzwRVx6w",
+  "ParentRef": "hNyVTdIh5EWtrCZzHcQmeQ/QTqyF-TCAkWh7mHqh5sNkg",
+  "Created": "2026-05-09T07:37:21.7466322Z",
+  "Updated": "2026-05-09T07:37:21.7466322Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

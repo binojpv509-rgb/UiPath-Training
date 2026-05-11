@@ -1,0 +1,6 @@
+{
+  "Name": "UiDemo-RE",
+  "ProjectType": "Process",
+  "Description": "Bank Transaction app - uipath training",
+  "MainFile": "Main.xaml"
+}

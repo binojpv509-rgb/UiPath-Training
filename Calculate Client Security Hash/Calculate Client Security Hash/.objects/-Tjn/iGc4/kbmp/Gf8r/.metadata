@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Log Out",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Gf8r-KqnNEur8ypwENDKNQ",
+  "Reference": "fwTkfeJNQEaSlkVxhFfIrw/Gf8r-KqnNEur8ypwENDKNQ",
+  "ParentRef": "fwTkfeJNQEaSlkVxhFfIrw/kbmpXQGjkUOw25YZN7ZxVQ",
+  "Created": "2026-05-07T07:15:43.5720158Z",
+  "Updated": "2026-05-07T07:15:43.5720158Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,4 @@
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+814242,"Professional Services",2017-11-04,96526,19305.2,115831,CAD
+807588,"IT Support",2017-11-09,273148,54629.6,327778,CAD
+201161,"Various paper supplies",2017-11-01,34127,6825.4,40952.4,CAD

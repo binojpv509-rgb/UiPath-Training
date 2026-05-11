@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UqYWJY73VEKaqAb_uog29Q" Reference="T58RIZsXAUyuwn3Q9_EhGg/cnZGchkPwkOMXt6bgNIxWA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="9ad7f6a9-2d3c-4c39-895a-243afc375dff" DesignTimeRectangle="111, 134, 120, 23" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;ctrl automationid='pass' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' role='editable text' /&gt;" Guid="1fad53cf-94e4-4944-8298-49e664175b73" ScopeSelectorArgument="[&quot;&lt;wnd app='uidemo.exe' title='&quot;+in_Config(&quot;ApplicationWindowName&quot;).ToString+&quot;' /&gt;&quot;]" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2b43dd032a3fe8194ac88b297529d10e.jpg" xmlns="">0bEyDwFjoEEWHcSVNZmaaHg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

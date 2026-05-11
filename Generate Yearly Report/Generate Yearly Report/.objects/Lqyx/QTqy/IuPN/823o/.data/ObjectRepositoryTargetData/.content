@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="of-3HQ1PQEGjneLubeidzg" Reference="hNyVTdIh5EWtrCZzHcQmeQ/823oOLKcIUeuXDuruEy4gw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/reports/upload" CVScreenId="3dbeac28-1e56-40f9-958f-4d02de984cd2" CvElementArea="183, 452, 222, 36" CvType="InputBox" DesignTimeRectangle="184, 453, 220, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl data-id='reportYear' data-toggle='dropdown' /&gt;" Guid="cc2d40de-a9ce-4926-8424-a86f18a32a6c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Upload Yearly Report' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="612c9bd177f7fdde6517a3e24bce4d18.jpg" xmlns="">0Ug1fNCGad0uUENFLeZmgjg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

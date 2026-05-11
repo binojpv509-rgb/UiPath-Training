@@ -1,0 +1,6 @@
+{
+  "Name": "Generate Yearly Report",
+  "ProjectType": "Process",
+  "Description": "The bot automates the retrieval of Vendor Tax IDs from work items, downloads all corresponding monthly reports for the year 2025, consolidates them into a single yearly Excel report, uploads the report back into the system, and updates the work item status with the generated upload ID.",
+  "MainFile": "Main.xaml"
+}

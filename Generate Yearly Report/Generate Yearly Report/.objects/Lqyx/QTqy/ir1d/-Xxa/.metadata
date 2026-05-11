@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Report-IT213456-1 (1).c…",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "-XxaEDo73kyuVXvinTnyOA",
+  "Reference": "hNyVTdIh5EWtrCZzHcQmeQ/-XxaEDo73kyuVXvinTnyOA",
+  "ParentRef": "hNyVTdIh5EWtrCZzHcQmeQ/ir1dEG9AxkuIBy00l4ztIw",
+  "Created": "2026-05-09T05:46:56.6155042Z",
+  "Updated": "2026-05-09T05:46:56.6155042Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

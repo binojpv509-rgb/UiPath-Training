@@ -1,0 +1,6 @@
+{
+  "Name": "Calculate Client Security Hash",
+  "ProjectType": "Process",
+  "Description": "The bot logs into the system, navigates through the dashboard to access the Work Items queue, and identifies tasks of type WI5. For each WI5 item, the automation extracts client-specific data (Client ID and Client Country), generates a SHA1 hash value using an external web tool, and updates the work item status to “Completed” with the generated hash as a comment.",
+  "MainFile": "Main.xaml"
+}

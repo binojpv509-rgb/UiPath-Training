@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8-IV0YwiaEm1kisWrDE1zg" Reference="T58RIZsXAUyuwn3Q9_EhGg/xFqevvooIUyi1kvZK2bDwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="6ad13979-3f84-47ef-ae1a-851ab9c17f2c" CvElementArea="110, 90, 122, 25" CvType="InputBox" DesignTimeRectangle="111, 91, 120, 23" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='user' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='user' role='editable text' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="bda2a084-c1b5-4ce6-82ca-f5fb365f235f" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="[&quot;&lt;wnd app='uidemo.exe' title='&quot;+in_Config(&quot;ApplicationWindowName&quot;).ToString+&quot;' /&gt;&quot;]" SearchSteps="Selector" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="0" />
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="5c334d950abb7bc6d5a482d1ed91191d.jpg" xmlns="">0TKm2V4pGCUGQct4t2V0QNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "AccountNumber",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "MbgRe1hHX0GogH2H0NBv7w",
+  "Reference": "T58RIZsXAUyuwn3Q9_EhGg/MbgRe1hHX0GogH2H0NBv7w",
+  "ParentRef": "T58RIZsXAUyuwn3Q9_EhGg/CwOLXE_bGU-I83KEtqNYnQ",
+  "Created": "2026-05-06T11:03:44.394884Z",
+  "Updated": "2026-05-06T11:04:15.0226163Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

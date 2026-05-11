@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Close",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "RrRom_rNSUeATOLTiWqxVQ",
+  "Reference": "7x1oMq6Zkk-zDRC8PltBbQ/RrRom_rNSUeATOLTiWqxVQ",
+  "ParentRef": "7x1oMq6Zkk-zDRC8PltBbQ/Nco4EOJvKESIPklCq0L6cg",
+  "Created": "2026-05-01T13:35:27.8035353Z",
+  "Updated": "2026-05-01T13:35:27.8035353Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

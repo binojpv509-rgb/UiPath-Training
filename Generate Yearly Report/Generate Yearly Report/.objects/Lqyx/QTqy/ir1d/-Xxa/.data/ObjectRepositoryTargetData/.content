@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RPvrDvGFVEmazUpSjX5WAA" Reference="hNyVTdIh5EWtrCZzHcQmeQ/-XxaEDo73kyuVXvinTnyOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="262c1bc8-5517-46bb-9feb-87e01d7b8862" DesignTimeRectangle="133, 366, 537, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;" Guid="87c3fe49-0ddc-408f-81ea-f042020ee200" ScopeSelectorArgument="&lt;wnd app='msedge.exe' title='Save As' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="40022c95a7518fe60070fbc2681bf89c.jpg" xmlns="">0fGZMBODw5kO9nM4hPgfN9g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

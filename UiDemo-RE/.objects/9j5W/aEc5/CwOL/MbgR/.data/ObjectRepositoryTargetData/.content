@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jH8ZvKMtYEWSdkWcbk5nNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="83cfb281-d63d-40fa-9b62-7b5964a41803" CvTextArea="306, 126, 72, 15" CvTextArgument="113029273" CvType="Text" DesignTimeRectangle="308, 126, 69, 16" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;ctrl automationid='accountnrlabel' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;&lt;ctrl name='113029273' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='113029273' /&gt;" Guid="83823bdf-b22e-47f5-a423-35e1229e939d" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="83cfb281-d63d-40fa-9b62-7b5964a41803" CvTextArea="235, 126, 70, 15" CvTextArgument="Account #:" CvType="Text" DesignTimeRectangle="238, 126, 66, 16" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Account #:' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Account #:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Account #:' /&gt;" Guid="f3148e7f-a8fa-4a1d-9e1d-281d383ef090" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="2cd480a971cfcf7efe775a69e84bc35f.jpg" xmlns="">0hwf3h0z0M0STKtR3M2eRwg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

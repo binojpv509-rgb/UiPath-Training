@@ -1,0 +1,13 @@
+﻿{
+  "Name": "INPUT email",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "-xlLlBFJuU-L3Z12EoWj0g",
+  "Reference": "fwTkfeJNQEaSlkVxhFfIrw/-xlLlBFJuU-L3Z12EoWj0g",
+  "ParentRef": "fwTkfeJNQEaSlkVxhFfIrw/amGc8SULkkS_8t2pvt5Qyw",
+  "Created": "2026-05-07T05:14:21.0632509Z",
+  "Updated": "2026-05-07T05:14:21.0632509Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

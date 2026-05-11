@@ -1,0 +1,39 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "NForEachUiElement_1",
+        "hash": "NForEachUiElement_1|DataTable|6eLqGUSAFML6kuu9zFEYs3HyuRYriZRd34Y886AU8",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Actions",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Type",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Status",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "WIID",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "NForEachUiElement_1|DataTable|BavX9yZojPCGZ3xF0EynI10yJGS4t0jGIfaaRhni528",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    }
+  ]
+}

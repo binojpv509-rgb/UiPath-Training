@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Save as",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "HlROVc729kKGbXVZakOz1w",
+  "Reference": "hNyVTdIh5EWtrCZzHcQmeQ/HlROVc729kKGbXVZakOz1w",
+  "ParentRef": "hNyVTdIh5EWtrCZzHcQmeQ/ob2vWx1FUkuN9onN_fwjyQ",
+  "Created": "2026-05-09T05:40:08.2020139Z",
+  "Updated": "2026-05-09T05:40:08.2020139Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

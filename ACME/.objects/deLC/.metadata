@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Chrome: ACME System",
+  "Type": "App",
+  "Id": "deLCNPSgVECXemGmh8c9kQ",
+  "Reference": "7x1oMq6Zkk-zDRC8PltBbQ/deLCNPSgVECXemGmh8c9kQ",
+  "Created": "2026-05-01T13:35:25.7153273Z",
+  "Updated": "2026-05-01T13:39:44.0951576Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

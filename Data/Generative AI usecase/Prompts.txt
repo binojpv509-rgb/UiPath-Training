@@ -1,0 +1,26 @@
+Content generation - Summarize user feedback
+
+Summarize this email <[CurrentEmail.Body]> into a single short sentence.  
+
+- If it matches an existing known issue or feature request, return exactly that phrase. 
+
+- If it does not match any, create a new short phrase that describes the core issue or request. 
+
+- Do NOT include names, dates, timestamps, or any extra explanation. 
+
+- ONLY return the short summary. 
+
+
+Categorize
+
+Bug report: A technical issue or malfunction where the product doesn't work as expected (e.g., crashes, errors, missing functionality).
+Feature request: A suggestion to add or improve a capability that doesn't currently exist in the product (e.g., new filters, dark mode).
+Complaint: Negative feedback about the user experience, product limitations, or service quality that doesn't involve a technical bug.
+Praise: Positive feedback or appreciation for the product, team, or specific feature (e.g., compliments, thank-yous).
+Other: Messages that don't clearly fall into the categories above, including general inquiries, unrelated content, or unclear feedback.
+
+
+Content generation - Extract user feedback 2
+
+Extract the message body from <[CurrentEmail.Body]> 
+Ignore any polite words and the automated message at the end.

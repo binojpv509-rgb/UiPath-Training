@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Dashboard-HomeScreen",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Ahdh6MvAwEa0DL4aXZgPFQ",
+  "Reference": "fwTkfeJNQEaSlkVxhFfIrw/Ahdh6MvAwEa0DL4aXZgPFQ",
+  "ParentRef": "fwTkfeJNQEaSlkVxhFfIrw/kbmpXQGjkUOw25YZN7ZxVQ",
+  "Created": "2026-05-07T05:55:06.710314Z",
+  "Updated": "2026-05-07T05:55:06.710314Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

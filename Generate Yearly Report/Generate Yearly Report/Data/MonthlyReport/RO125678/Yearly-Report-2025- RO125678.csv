@@ -1,0 +1,8 @@
+﻿InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+609506,Waste management services,2017-04-22,259705,51941,311646,RON
+992301,Waste management services,178177,35635.4,213812,RON,2017-08-05
+305999,Concierge Services,79471,15894.2,95365.2,USD,2017-03-06
+703854,Beverages and Catering,144731,28946.2,173677,RON,2017-10-12
+976962,Concierge Services,35828,7165.6,42993.6,CAD,2017-10-27
+315576,Concierge Services,33401,6680.2,40081.2,CAD,2017-10-05
+153021,Waste management services,2017-09-03,287927,57585.4,345512,USD

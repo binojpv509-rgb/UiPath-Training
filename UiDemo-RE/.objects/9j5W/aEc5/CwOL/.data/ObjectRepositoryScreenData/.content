@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="Lm-adNUhS0O1jN14fTZCEg" Reference="T58RIZsXAUyuwn3Q9_EhGg/CwOLXE_bGU-I83KEtqNYnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="2212, 113, 626, 629" ContentHash="Qt43CqV8MUWyNEhgJzMZfA" FilePath="H:\Projects\UiPath\Data\UiAutomation\uidemo.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEaSURBVFhH7ZTbCoJAEIaFCCKCCKJnLTpQVBdB14HQ00T0CqUP4AN41puJAVe92F3HRZegHfgQFvH7/1nQMmPmZ+Z8uYJOCm01vJe64PF8cZ+Ftho89DxPC8IAeZ73QpZlJWmattsAfsBavsk0yRsD3Ox7ST3A4uTC/OjC7ODCdO/AZOfAeOvAaPOB4foDg1UVwLZtIUmSqG2AIq9vgNcc5coBKHIWgNec0RhAdAUUOSJrjsRxrLYBihxBMa85QzkARY7ImjOkAURXQJEjKOY1Z0RRpLYBihyRNUe5cgCKHEEprzmjMYDoCqjImiNhGKptgApvA3V57wFkzbUGEMmDIGgfAKH84ShypQBdyn3fFwfQSaE1Y+bvx7K+efsbU5+Ow3MAAAAASUVORK5CYII=" Reference="T58RIZsXAUyuwn3Q9_EhGg/CwOLXE_bGU-I83KEtqNYnQ" Selector="&lt;wnd app='uidemo.exe' title='UIDemo' /&gt;" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="fbcf08201c24a85bb25be1550f5ac628.jpg" xmlns="">0SwrJxyo4dk-x3U8FEr4Kng</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

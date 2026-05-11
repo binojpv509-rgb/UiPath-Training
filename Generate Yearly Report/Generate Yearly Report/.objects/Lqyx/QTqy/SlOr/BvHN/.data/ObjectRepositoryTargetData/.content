@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="S8H1i2FV0k-lZzFqL3O-qQ" Reference="hNyVTdIh5EWtrCZzHcQmeQ/BvHNj7WLVECQqPLWSdJkIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="1585f981-e779-476b-b12a-1b36fb6de690" DesignTimeRectangle="197, 405, 261, 24" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' aaname='File name:' cls='Edit' /&gt;" Guid="01ac7c59-0681-411f-a355-a7f5a12baf4d" ScopeSelectorArgument="&lt;wnd app='msedge.exe' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e7f36273849d1659e41e1edce7a95536.jpg" xmlns="">0Xh_8SRl780-9ivSU3HaCPg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

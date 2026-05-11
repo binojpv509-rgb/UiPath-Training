@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Report-IT213456-1 (1).c…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "d0R5V7BuT0ezrrN1NGjyuw",
+  "Reference": "hNyVTdIh5EWtrCZzHcQmeQ/d0R5V7BuT0ezrrN1NGjyuw",
+  "ParentRef": "hNyVTdIh5EWtrCZzHcQmeQ/ir1dEG9AxkuIBy00l4ztIw",
+  "Created": "2026-05-09T05:47:52.1140261Z",
+  "Updated": "2026-05-09T05:47:52.1140261Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

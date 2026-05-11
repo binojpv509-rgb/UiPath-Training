@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Cash In - text field",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "IznhG_qb9UCWP4cSptVn0w",
+  "Reference": "T58RIZsXAUyuwn3Q9_EhGg/IznhG_qb9UCWP4cSptVn0w",
+  "ParentRef": "T58RIZsXAUyuwn3Q9_EhGg/CwOLXE_bGU-I83KEtqNYnQ",
+  "Created": "2026-05-06T11:03:43.7646423Z",
+  "Updated": "2026-05-06T11:05:04.0321469Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
